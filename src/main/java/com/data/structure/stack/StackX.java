@@ -1,6 +1,6 @@
 package com.data.structure.stack;
 /**
- * 栈
+ * 栈(后进先出)
  * @author: zhaoyl
  * @since: 2017年8月11日  下午1:35:16
  * @history:

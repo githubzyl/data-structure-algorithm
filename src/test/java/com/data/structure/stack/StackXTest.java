@@ -6,6 +6,8 @@ import java.io.InputStreamReader;
 
 import org.junit.Test;
 
+import com.data.structure.stack.example.InfixExpression;
+import com.data.structure.stack.example.ParsePost;
 import com.data.structure.stack.example.Reverser;
 
 public class StackXTest {
@@ -40,6 +42,40 @@ public class StackXTest {
 		}
 	}
 	
+	@Test
+	public void testInfixExpression() throws IOException{
+		String input, output;
+		while(true){
+			System.out.println("Enter infix:");
+			System.out.flush();
+			input = getString();
+			if("".equals(input)){
+				break;
+			}
+			InfixExpression expression = new InfixExpression(input);
+			output = expression.doTranas();
+			System.out.println("Postfix is " + output + "\n");
+		}
+	}
+	
+	@Test
+	public void testParsePost() throws IOException{
+		String input;
+		int output;
+		while(true){
+			System.out.println("Enter infix:");
+			System.out.flush();
+			input = getString();
+			if("".equals(input)){
+				break;
+			}
+			InfixExpression expression = new InfixExpression(input);
+			input = expression.doTranas();
+			ParsePost parsePost = new ParsePost(input);
+			output = parsePost.doParse();
+			System.out.println("Postfix is " + output + "\n");
+		}
+	}
 	
 	public static String getString() throws IOException{
 		InputStreamReader reader = new InputStreamReader(System.in);
