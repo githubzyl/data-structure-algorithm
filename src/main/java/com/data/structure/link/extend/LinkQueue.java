@@ -1,7 +1,7 @@
 package com.data.structure.link.extend;
 
 /**
- * 双向链表实现的队列
+ * 双端链表实现的队列
  * @author: zhaoyl
  * @since: 2017年8月14日  上午11:05:27
  * @history:

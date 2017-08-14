@@ -1,5 +1,10 @@
 package com.data.structure.link;
-
+/**
+ * 双端链表
+ * @author: zhaoyl
+ * @since: 2017年8月14日  下午1:35:49
+ * @history:
+ */
 public class FirstLastList {
 
 	private FirstLastLink first;

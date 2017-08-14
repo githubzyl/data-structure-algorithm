@@ -1,9 +1,14 @@
 package com.data.structure.link;
-
+/**
+ * 单链表
+ * @author: zhaoyl
+ * @since: 2017年8月14日  下午1:36:01
+ * @history:
+ */
 public class LinkList {
 
 	private Link first;
-	
+
 	public LinkList(){
 		first = null;
 	}
