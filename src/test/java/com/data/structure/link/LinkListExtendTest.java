@@ -74,7 +74,6 @@ public class LinkListExtendTest {
 					System.out.println("Invalid entry");
 					break;
 			}
-			
 		}
 	}
 	
